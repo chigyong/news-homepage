@@ -1,0 +1,53 @@
+nav {
+  flex-direction: column;
+  align-items: flex-start;
+}
+nav .menu {
+  display: flex;
+}
+nav .menu.active .bars:nth-child(2) {
+  opacity: 0;
+}
+nav .menu.active .bars:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+nav .menu.active .bars:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+nav .navbar-links {
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  background-color: white;
+}
+nav .navbar-links ul {
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10rem;
+}
+nav .navbar-links li a {
+  text-align: left;
+  color: black;
+}
+nav .navbar-links.active {
+  display: flex;
+}
+
+section {
+  margin: 0;
+}
+section .card {
+  grid-template-columns: repeat(1, 1fr);
+}
+section .card .left {
+  margin: 1rem;
+}
+section .card .left img {
+  height: 300px;
+}
+section .card .right {
+  width: 100%;
+}/*# sourceMappingURL=responsive.css.map */

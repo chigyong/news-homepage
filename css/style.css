@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+nav .navbar-links ul {
+  display: flex;
+  list-style: none;
+}
+nav .navbar-links li a {
+  text-decoration: none;
+  padding: 1rem;
+  color: black;
+  display: block;
+}
+nav .menu {
+  flex-direction: column;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: none;
+}
+nav .menu .bars {
+  padding: 2px 20px;
+  background-color: black;
+  margin: 2px;
+  transition: 0.5s ease-in-out;
+}
+
+section {
+  margin: 2rem 17rem;
+  max-height: 750px;
+  width: 85%;
+}
+section .card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+section .card .left img {
+  width: 100%;
+}
+section .card .left .blog {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 2rem;
+}
+section .card .left .blog .left-content h1 {
+  font-size: 50px;
+}
+section .card .left .blog .right-content p {
+  text-align: justify;
+}
+section .card .left .blog .right-content button {
+  padding: 0.5rem 2rem;
+  margin-top: 2rem;
+  background-color: hsl(5deg, 85%, 63%);
+  border: none;
+  color: white;
+}
+section .card .right {
+  background-color: black;
+  color: hsl(36deg, 100%, 99%);
+  width: 50%;
+  padding: 1rem;
+}
+section .card .right h1 {
+  color: hsl(35deg, 77%, 62%);
+}
+section .card .right h2 {
+  font-size: 18px;
+  padding: 2rem 0;
+}
+section .card .right p {
+  text-align: justify;
+  color: hsl(233deg, 8%, 79%);
+}
+section .card .right .line {
+  padding: 1px;
+  background-color: white;
+  opacity: 0.5;
+  margin-top: 1rem;
+}
+
+.new-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 5rem 17rem;
+  gap: 3rem;
+}
+.new-card .box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.new-card .box h1 {
+  width: 100%;
+  color: hsl(233deg, 8%, 79%);
+}
+.new-card .box img {
+  height: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav .menu {
+    display: flex;
+  }
+  nav .menu.active .bars:nth-child(2) {
+    opacity: 0;
+  }
+  nav .menu.active .bars:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  nav .menu.active .bars:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  nav .navbar-links {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    background-color: white;
+  }
+  nav .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10rem;
+  }
+  nav .navbar-links li a {
+    text-align: left;
+    color: black;
+  }
+  nav .navbar-links.active {
+    display: flex;
+  }
+  section {
+    margin: 0;
+    width: 100%;
+  }
+  section .card {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    text-align: center;
+  }
+  section .card .left img {
+    width: 100%;
+  }
+  section .card .left .blog {
+    grid-template-columns: 1fr;
+  }
+  section .card .right {
+    width: 100%;
+  }
+  .new-card {
+    grid-template-columns: 1fr;
+    margin: 22rem 1rem 5rem 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */

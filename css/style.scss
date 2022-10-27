@@ -70,6 +70,9 @@ img {
 .right-content {
 p {
     text-align: justify;
+    color: hsl(236, 13%, 42%);
+    line-height: 30px;
+    padding-top: 1.5rem;
 }
 button {
     padding: 1rem 3rem;
@@ -78,6 +81,7 @@ button {
     border: none;
     color: white;
     text-transform: uppercase;
+    letter-spacing: 5px;
 }
 button:hover {
     background-color: black;
@@ -193,7 +197,7 @@ section {
 .card{
     grid-template-columns: 1fr;
     padding: 1rem;
-    text-align: center;
+    text-align: left;
 .left {
 img {
     width: 100%;
@@ -209,7 +213,7 @@ img {
 }
 .new-card {
     grid-template-columns: 1fr;
-    margin: 22rem 1rem 2rem 1rem;
+    margin: 28rem 1rem 2rem 1rem;
     gap: 1rem;
     padding: 0;
 .content {

@@ -149,6 +149,7 @@ section .card .right .line {
   }
   nav .menu {
     display: flex;
+    position: fixed;
   }
   nav .menu.active .bars:nth-child(2) {
     opacity: 0;

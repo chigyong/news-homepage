@@ -62,10 +62,10 @@ img {
     grid-template-columns: repeat(2, 1fr);
     padding-top: 2rem;
 .left-content {
-    h1 {
-        font-size: 50px;
-        font-weight: 800;
-    }
+h1 {
+    font-size: 50px;
+    font-weight: 800;
+}
 }
 .right-content {
 p {
@@ -157,7 +157,7 @@ nav {
     
 .menu {
     display: flex;
-    
+    position: fixed;
 }
 .menu.active .bars:nth-child(2) {
     opacity: 0;

@@ -197,5 +197,10 @@ section .card .right .line {
   .new-card {
     grid-template-columns: 1fr;
     margin: 22rem 1rem 2rem 1rem;
+    gap: 1rem;
+    padding: 0;
+  }
+  .new-card .content h2 {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=style.css.map */

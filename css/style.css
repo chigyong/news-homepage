@@ -6,6 +6,10 @@
   font-family: "Inter", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -21,6 +25,11 @@ nav .navbar-links li a {
   padding: 1rem;
   color: black;
   display: block;
+}
+nav .navbar-links li a:hover {
+  color: hsl(35deg, 77%, 62%);
+  transition: 0.5s ease;
+  cursor: pointer;
 }
 nav .menu {
   flex-direction: column;
@@ -127,6 +136,9 @@ section .card .right .line {
 }
 
 @media only screen and (max-width: 768px) {
+  body.body {
+    background-color: hsl(233deg, 8%, 79%);
+  }
   nav {
     flex-direction: column;
     align-items: flex-start;
@@ -144,9 +156,9 @@ section .card .right .line {
     transform: translateY(-8px) rotate(-45deg);
   }
   nav .navbar-links {
-    width: 50%;
+    width: 70%;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     display: none;
@@ -184,6 +196,6 @@ section .card .right .line {
   }
   .new-card {
     grid-template-columns: 1fr;
-    margin: 22rem 1rem 5rem 1rem;
+    margin: 22rem 1rem 2rem 1rem;
   }
 }/*# sourceMappingURL=style.css.map */

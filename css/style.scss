@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+body {
+    overflow-x: hidden;
+}
 nav {
     display: flex;
     justify-content: space-around;
@@ -21,6 +24,11 @@ li a {
     padding: 1rem;
     color: black;
     display: block;
+}
+li a:hover {
+    color: hsl(35, 77%, 62%);
+    transition: .5s ease;
+    cursor: pointer;
 }
 }
 .menu {
@@ -135,9 +143,14 @@ img {
 }
 
 @media only screen and (max-width: 768px) {
+
+body.body {
+    background-color: hsl(233, 8%, 79%);
+}
 nav {
     flex-direction: column;
     align-items: flex-start;
+    
 .menu {
     display: flex;
 }
@@ -151,9 +164,9 @@ nav {
     transform: translateY(-8px) rotate(-45deg);
 }
 .navbar-links {
-    width: 50%;
+    width: 70%;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     display: none;
@@ -162,6 +175,7 @@ ul {
     flex-direction: column;
     width: 100%;
     margin-top: 10rem;
+   
 }
 li a {
     text-align: left;
@@ -194,6 +208,6 @@ img {
 }
 .new-card {
     grid-template-columns: 1fr;
-    margin: 22rem 1rem 5rem 1rem;
+    margin: 22rem 1rem 2rem 1rem;
 }  
 }

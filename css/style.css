@@ -56,16 +56,23 @@ section .card .left .blog {
 }
 section .card .left .blog .left-content h1 {
   font-size: 50px;
+  font-weight: 800;
 }
 section .card .left .blog .right-content p {
   text-align: justify;
 }
 section .card .left .blog .right-content button {
-  padding: 0.5rem 2rem;
+  padding: 1rem 3rem;
   margin-top: 2rem;
   background-color: hsl(5deg, 85%, 63%);
   border: none;
   color: white;
+  text-transform: uppercase;
+}
+section .card .left .blog .right-content button:hover {
+  background-color: black;
+  transition: 0.5s ease;
+  cursor: pointer;
 }
 section .card .right {
   background-color: black;
@@ -79,6 +86,11 @@ section .card .right h1 {
 section .card .right h2 {
   font-size: 18px;
   padding: 2rem 0;
+}
+section .card .right h2:hover {
+  color: hsl(35deg, 77%, 62%);
+  cursor: pointer;
+  transition: 0.5s ease;
 }
 section .card .right p {
   text-align: justify;
@@ -104,6 +116,11 @@ section .card .right .line {
 .new-card .box h1 {
   width: 100%;
   color: hsl(233deg, 8%, 79%);
+}
+.new-card .box h2:hover {
+  color: hsl(5deg, 85%, 63%);
+  cursor: pointer;
+  transition: 0.5s ease;
 }
 .new-card .box img {
   height: 150px;
